@@ -12,6 +12,10 @@ def hello_world():
 @app.route('/exercices/')
 def exercices():
     return render_template('exercices.html') #Comm2
-                                                                                                               
+
+@app.route('/templates@template_la_maison_a_chier')
+def template():
+    return render_template('template_la_maison_a_chier.html') 
+  
 if __name__ == "__main__":
   app.run(debug=True)
