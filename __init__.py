@@ -16,6 +16,7 @@ def exercices():
 @app.route('/templates@template_la_maison_a_chier')
 def template():
     return render_template('template_la_maison_a_chier.html')
+  
 @app.route('/templates@trefle')
 def template():
     return render_template('trefle.html') 
