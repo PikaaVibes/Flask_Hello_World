@@ -1,0 +1,75 @@
+<!doctype html>
+<head>
+<title>Flask</title>
+</head>    
+<body>
+<svg width="800" height="600" style="background-color:rgb(200,200,255);">
+  <!-- Fond du SVG avec une taille définie et un fond bleu clair pour le ciel -->
+  
+  <!-- Le rectangle pour la base de la maison -->
+  <rect x="200" y="300" width="300" height="200" 
+        style="fill:orange; stroke:black; stroke-width:3;" />
+  <!-- Explication : Le rectangle représente la base de la maison. 
+       - x et y définissent la position du coin supérieur gauche du rectangle.
+       - width et height définissent la largeur et la hauteur.
+       - fill est la couleur intérieure, stroke est la couleur du contour, stroke-width est l'épaisseur du contour. -->
+
+  <!-- Le triangle pour le toit -->
+  <polygon points="200,300 350,150 500,300" 
+           style="fill:red; stroke:black; stroke-width:3;" />
+  <!-- Explication : Le toit est dessiné avec un polygone (polygon). 
+       - points spécifie les coordonnées des sommets du triangle.
+       - fill, stroke et stroke-width fonctionnent de la même manière que pour le rectangle. -->
+
+  <!-- La porte -->
+  <rect x="330" y="400" width="50" height="100" 
+        style="fill:brown; stroke:black; stroke-width:3;" />
+  <!-- Explication : La porte est représentée par un rectangle plus petit à l'intérieur de la maison. -->
+
+  <!-- La fenêtre gauche -->
+  <rect x="240" y="330" width="50" height="50" 
+        style="fill:lightblue; stroke:black; stroke-width:3;" />
+  <!-- Explication : Une fenêtre carrée est ajoutée avec les mêmes propriétés que la porte, mais avec une couleur différente. -->
+
+  <!-- La fenêtre droite -->
+  <rect x="410" y="330" width="50" height="50" 
+        style="fill:lightblue; stroke:black; stroke-width:3;" />
+  <!-- Explication : Identique à la fenêtre gauche, mais positionnée à droite. -->
+
+  <!-- Le soleil -->
+  <circle cx="650" cy="100" r="50" 
+          style="fill:yellow; stroke:black; stroke-width:3;" />
+  <!-- Explication : Le soleil est représenté par un cercle.
+       - cx et cy définissent les coordonnées du centre.
+       - r définit le rayon.
+       - fill, stroke et stroke-width contrôlent respectivement la couleur de remplissage, le contour et son épaisseur. -->
+
+  <!-- Rayons du soleil -->
+  <line x1="650" y1="40" x2="650" y2="10" 
+        style="stroke:yellow; stroke-width:4;" />
+  <!-- Explication : Une ligne représentant un rayon du soleil. 
+       - x1, y1 et x2, y2 définissent les coordonnées des deux extrémités de la ligne.
+       - stroke et stroke-width contrôlent la couleur et l'épaisseur de la ligne. -->
+  <line x1="650" y1="160" x2="650" y2="190" style="stroke:yellow; stroke-width:4;" />
+  <line x1="590" y1="100" x2="560" y2="100" style="stroke:yellow; stroke-width:4;" />
+  <line x1="710" y1="100" x2="740" y2="100" style="stroke:yellow; stroke-width:4;" />
+  <line x1="600" y1="60" x2="570" y2="30" style="stroke:yellow; stroke-width:4;" />
+  <line x1="700" y1="140" x2="730" y2="170" style="stroke:yellow; stroke-width:4;" />
+  <line x1="700" y1="60" x2="730" y2="30" style="stroke:yellow; stroke-width:4;" />
+  <line x1="600" y1="140" x2="570" y2="170" style="stroke:yellow; stroke-width:4;" />
+  <!-- Explication : Répétition des lignes pour ajouter plus de rayons autour du soleil. -->
+
+  <!-- La cheminée -->
+  <rect x="430" y="200" width="30" height="60" 
+        style="fill:darkred; stroke:black; stroke-width:3;" />
+  <!-- Explication : La cheminée est un petit rectangle placé sur le toit. -->
+
+  <!-- Cheminée fumée -->
+  <circle cx="445" cy="190" r="10" style="fill:lightgray; opacity:0.7;" />
+  <circle cx="450" cy="180" r="15" style="fill:lightgray; opacity:0.5;" />
+  <circle cx="455" cy="160" r="20" style="fill:lightgray; opacity:0.3;" />
+  <!-- Explication : La fumée est représentée par des cercles translucides superposés.
+       - opacity contrôle la transparence de chaque cercle. -->
+</svg>
+</body>
+</html>
