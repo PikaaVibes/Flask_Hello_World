@@ -5,7 +5,7 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__)                                                                                                                  
 
-@app.route('/home.html')
+@app.route('/home')
 def accueil():
     return render_template('home.html')
 
