@@ -25,8 +25,8 @@ def template():
 def template():
     return render_template('trefle.html')
 
-@app.route('/templates@jeu_de_des')
-def template():
+@app.route('/jeu_de_des')
+def des():
     return render_template('jeu_de_des.html')
   
 if __name__ == "__main__":
