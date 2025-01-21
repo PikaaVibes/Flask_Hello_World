@@ -19,7 +19,11 @@ def template():
   
 @app.route('/templates@trefle')
 def template():
-    return render_template('trefle.html') 
+    return render_template('trefle.html')
+
+@app.route('/templates@jeu_de_des')
+def template():
+    return render_template('jeu_de_des.html')
   
 if __name__ == "__main__":
   app.run(debug=True)
