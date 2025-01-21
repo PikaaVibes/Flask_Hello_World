@@ -21,6 +21,9 @@ def exercices():
 def template():
     return render_template('template_la_maison_a_chier.html')
   
+@app.route('/trefle')
+def trefle():
+    return render_template('trefle.html')
 
 
 @app.route('/jeu_de_des')
