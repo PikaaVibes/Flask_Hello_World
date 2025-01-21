@@ -17,7 +17,7 @@ def hello_world():
 def exercices():
     return render_template('exercices.html') #Comm2
 
-@app.route('/templates@template_la_maison_a_chier')
+@app.route('/template_la_maison_a_chier')
 def template():
     return render_template('template_la_maison_a_chier.html')
   
