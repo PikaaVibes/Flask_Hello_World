@@ -29,6 +29,10 @@ def trefle():
 @app.route('/jeu_de_des')
 def des():
     return render_template('jeu_de_des.html')
+
+@app.route('/bibliotheque_images')
+def image():
+    return render_template('bibliotheque_images.html')
   
 if __name__ == "__main__":
   app.run(debug=True)
