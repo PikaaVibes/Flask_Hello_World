@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afficher des images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        img {
+            max-width: 300px;
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image à afficher</h1>
+    <div>
+        <input type="checkbox" id="image1" name="image1">
+        <label for="image1">Image 1</label>
+    </div>
+    <div>
+        <input type="checkbox" id="image2" name="image2">
+        <label for="image2">Image 2</label>
+    </div>
+    <div>
+        <input type="checkbox" id="image3" name="image3">
+        <label for="image3">Image 3</label>
+    </div>
+    <button onclick="afficherImages()">Afficher</button>
+    <div class="image-container">
+        <img id="img1" src="static/images/image1.jpg" alt="Image 1">
+        <img id="img2" src="static/images/image2.jpg" alt="Image 2">
+        <img id="img3" src="static/images/image3.jpg" alt="Image 3">
+    </div>
+    <script>
+        function afficherImages() {
+            // Cacher toutes les images
+            document.getElementById("img1").style.display = "none";
+            document.getElementById("img2").style.display = "none";
+            document.getElementById("img3").style.display = "none";
+
+            // Afficher les images en fonction des cases cochées
+            if (document.getElementById("image1").checked) {
+                document.getElementById("img1").style.display = "block";
+            }
+            if (document.getElementById("image2").checked) {
+                document.getElementById("img2").style.display = "block";
+            }
+            if (document.getElementById("image3").checked) {
+                document.getElementById("img3").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
