@@ -37,6 +37,10 @@ def image():
 @app.route('/Roulette_Russe')
 def roulette():
     return render_template('Roulette_Russe_Etape_1_Barillet_Vide.html')
+
+@app.route('/wankul')
+def wankul():
+    return render_template('wankul.html')
   
 if __name__ == "__main__":
   app.run(debug=True)
