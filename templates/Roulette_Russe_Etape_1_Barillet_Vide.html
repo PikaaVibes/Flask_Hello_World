@@ -1,50 +1,20 @@
-</html>
+<!DOCTYPE html>
+<html>
 <head>
 <script>
 function lancer(){
-          alert("le barillet tourne");
+    alert("Le barillet tourne");
+    // Appel de la fonction pour mélanger les positions des chambres
+    melangerChambres();
 }
 
 function afficherChambre(chambre){
     alert("Vous avez cliqué sur la chambre numéro " + chambre);
 }
 
-
 function chambreRouge(chambreId){
     // On change la couleur du barillet cliqué en rouge
     document.getElementById(chambreId).setAttribute("fill", "red");
-}
-
-function melangerChambres(){
-    // Générer de nouvelles positions aléatoires pour chaque chambre
-    let positions = [
-        {cx: 100, cy: 40},
-        {cx: 150, cy: 70},
-        {cx: 50, cy: 70},
-        {cx: 50, cy: 130},
-        {cx: 150, cy: 130},
-        {cx: 100, cy: 160}
-    ];
-
-    // Mélanger les positions
-    for (let i = positions.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [positions[i], positions[j]] = [positions[j], positions[i]];
-    }
-
-    // Appliquer les nouvelles positions aux chambres
-    for (let i = 0; i < positions.length; i++) {
-        let chambreId = "Br" + (i + 1);
-        document.getElementById(chambreId).setAttribute("cx", positions[i].cx);
-        document.getElementById(chambreId).setAttribute("cy", positions[i].cy);
-    }
-
-function resetCouleur(){
-    // Réinitialise la couleur de toutes les chambres à gris
-    let chambres = ["Br1", "Br2", "Br3", "Br4", "Br5", "Br6"];
-    chambres.forEach(function(chambreId) {
-        document.getElementById(chambreId).setAttribute("fill", "gray");
-    });
 }
 
 function melangerChambres(){
