@@ -33,6 +33,10 @@ def des():
 @app.route('/bibliotheque_images')
 def image():
     return render_template('bibliotheque_images.html')
+
+@app.route('/Roulette_Russe')
+def roulette():
+    return render_template('Roulette_Russe_Etape_1_Barillet_Vide.html')
   
 if __name__ == "__main__":
   app.run(debug=True)
